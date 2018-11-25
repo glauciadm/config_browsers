@@ -5,11 +5,12 @@ require 'selenium-webdriver'
 require 'site_prism'
 require 'ostruct'
 require_relative 'page_helper.rb'
+require_relative 'helper.rb'
 
 BROWSER = ENV['BROWSER']
 
 World(Pages)
-
+World(Helper)
 
 Capybara.register_driver :selenium do |app|
 

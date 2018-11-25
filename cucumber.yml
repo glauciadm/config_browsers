@@ -1,6 +1,6 @@
 ---
 
-default: --profile progress -p firefox_headless
+default: --profile progress -p chrome -p html
 
 pretty: --format pretty
 progress: --format progress
@@ -9,3 +9,5 @@ chrome_headless: BROWSER=chrome_headless
 firefox: BROWSER=firefox
 firefox_headless: BROWSER=firefox_headless
 #ie: BROWSER=ie
+
+html: --format html --out=reports/relatorio.html
