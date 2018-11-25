@@ -1,0 +1,9 @@
+---
+
+default: --profile progress -p chrome
+
+pretty: --format pretty
+progress: --format progress
+chrome: BROWSER=chrome
+firefox: BROWSER=firefox
+#ie: BROWSER=ie
